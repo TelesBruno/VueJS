@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+02 <html lang="en">
+03   <head>
+04     <meta charset="utf-8">
+05     <title>Lista de livros</title>
+06    <script language="vue.min.js" type="javascript"></script>
+08   </head>
+09 
+10   <body>
+11     <div class="container">
+12       <h2>Minha lista de livros</h2>
+13       <div class="input-group">
+14         <input placeholder="adicione um livro" type="text" class="js-novo-livro form-control">
+15         <span class="input-group-btn">
+16             <button  @click="addItem" class="js-add btn btn-default" type="button">Adicionar!</button>
+17           </span>
+18       </div>
+19       <ul>
+20         <li>
+21           <div class="checkbox">
+22             <label>
+23                 <input class="js-livro" name="list" type="checkbox" />
+24                 <big>Alice no País das Maravilhas</big> - <small>Lewis Carrol</small>
+25               </label>
+26           </div>
+27         </li>
+28         <li>
+29           <div class="checkbox">
+30             <label>
+31                 <input class="js-livro" name="list" type="checkbox">
+32                 <big>A Menina que Roubava Livros</big> - <small>Markus Zusak</small>
+33               </label>
+34           </div>
+35         </li>
+36         <li class="removido">
+37           <div class="checkbox">
+38             <label>
+39                 <input class="js-livro"  name="list"  type="checkbox" checked>
+40                 <big>O Senhor dos Anéis - As Duas Torres</big> - <small>J. R. R. Tolkien</small>
+41               </label>
+42           </div>
+43         </li>
+44       </ul>
+45     </div>
+    46   </body>
+49 </html>
