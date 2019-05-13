@@ -1,0 +1,32 @@
+body {
+  height: 100%;
+  font-family: arial, sans-serif;
+}
+
+ table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin-top: 40px;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+ }
+
+ td,th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+ }
+
+ input{
+   padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.entrada{
+  display: inline-block;
+  margin: 1em;
+}

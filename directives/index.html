@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> interações</title>
+    </head>
+    <body>
+        <div id="app">
+            <label>
+                <input type="checkbox" v-model="showText"/>
+                Show Text
+            </label>
+       <p v-bind:class="textClass" v-if="showText">{{text}}</p>
+       <a v-bind:[attr]="link">link</a>
+       <input type="number" v-model.number="number"
+        @keyup="sayHi">
+        
+    
+    <button v-on:click="sayHi">say hi</button>
+    </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="index.js"></script>
+</html>

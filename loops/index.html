@@ -1,0 +1,35 @@
+<!DOCTYPE html><html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <div id="app">
+            <ul>
+                <li v-for="todo in todos" :key ="todo.id">
+                    {{todo.title}}
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li v-for="(todo,index) in todos" :key ="todo.id">
+                    {{index+' - '+    todo.title}}
+                </li>
+            </ul>
+            <hr>
+            <h2>Users</h2>
+            <ul>
+                <li v-for="(role, name) in users">
+                  {{name}}: {{role}}
+                </li>
+            </ul>
+
+            <ul>
+                <template v-for ="(role, name) in users">
+                    <p>{{name}}: {{role}}</p>
+                </template>
+            </ul>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="index.js"></script>
+</html>
